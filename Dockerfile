@@ -1,4 +1,4 @@
-FROM cheggwpt/alpine-3.4:latest
+FROM cheggwpt/alpine:3.4
 
 RUN	apk --update --no-cache add \
 	--virtual .redis_service redis && \
