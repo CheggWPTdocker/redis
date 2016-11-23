@@ -14,7 +14,7 @@ ENV LINK_PASSWORD password
 ENV LINK_PATH /0
 
 RUN mkdir /data && chown nobody:nobody /data
-VOLUME /data
+VOLUME ["/data"]
 WORKDIR /data
 
 # Expose the ports for nginx
